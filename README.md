@@ -11,7 +11,7 @@
 
 ## Quick start (วันจริงแนะนำ)
 1) Upload repo นี้ขึ้น GitHub  
-2) เปิด `notebooks/AI_Person_Detection_YOLOv8_MP4.ipynb` ใน Google Colab  [Open in Colab](https://colab.research.google.com/github/NKRAFAVoiceAI/ai-person-detection-demo/blob/main/notebooks/AI_Person_Detection_YOLOv8_MP4.ipynb)
+2) เปิด `notebooks/AI_Person_Detection_YOLOv8.ipynb` ใน Google Colab  [Open in Colab](https://colab.research.google.com/github/NKRAFAVoiceAI/ai-person-detection-demo/blob/main/notebooks/AI_Person_Detection_YOLOv8.ipynb)
 3) ตั้งค่า **Runtime → Change runtime type → GPU (T4)**  
 4) Run all
 
