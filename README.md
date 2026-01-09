@@ -19,7 +19,7 @@
 ```
 ai-person-detection-yolo-colab/
   notebooks/
-    Person_Detection_YOLOv8_Colab.ipynb
+    AI_Person_Detection_YOLOv8.ipynb
   src/
     infer.py
     train.py
