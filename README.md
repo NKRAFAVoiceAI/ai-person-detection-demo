@@ -93,4 +93,5 @@ ai-person-detection-demo/
 
 ## 📬 ผู้พัฒนา
 ดร.พีรณัฐ  คำศรีสุข และ เรืออากาศเอก อานนท์  บางเสน
-จัดทำเพื่อการเรียนการสอนด้าน **Artificial Intelligence & Computer Vision** สำหรับนักเรียนระดับมัธยมศึกษา
+จัดทำเพื่อการเรียนการสอนด้าน **Artificial Intelligence & Computer Vision** 
+สำหรับนักเรียนระดับมัธยมศึกษา
