@@ -17,7 +17,7 @@
 
 คลิกเพื่อเปิด Notebook เวอร์ชันสมบูรณ์สำหรับการสอนนักเรียน:
 
-[Open in Colab](https://colab.research.google.com/github/NKRAFAVoiceAI/ai-person-detection-demo/blob/main/notebooks/AI_Person_Detection_YOLOv8_Full_Demo_Students.ipynb)
+[Open in Colab](https://colab.research.google.com/github/NKRAFAVoiceAI/ai-person-detection-demo/blob/main/notebooks/AI_Person_Detection_YOLOv8.ipynb)
 
 > แนะนำให้เปิดด้วย **คอมพิวเตอร์** และตั้งค่า  
 > Runtime → Change runtime type → **GPU**
@@ -42,7 +42,7 @@
 ai-person-detection-demo/
 │
 ├─ notebooks/
-│   └─ AI_Person_Detection_YOLOv8_Full_Demo_Students.ipynb
+│   └─ AI_Person_Detection_YOLOv8.ipynb
 │
 ├─ src/
 │   ├─ infer.py
@@ -104,7 +104,7 @@ ai-person-detection-demo/
 ---
 
 ## 📬 ผู้พัฒนา
-
+ดร.พีรณัฐ  คำศรีสุข และ เรืออากาศเอก อานนท์  บางเสน
 จัดทำเพื่อการเรียนการสอนด้าน  
 **Artificial Intelligence & Computer Vision**  
 สำหรับนักเรียนระดับมัธยมศึกษา
