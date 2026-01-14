@@ -82,18 +82,6 @@ ai-person-detection-demo/
 ├─ notebooks/
 │   └─ AI_Person_Detection_YOLOv8_Full_Demo_Students.ipynb
 │
-├─ src/
-│   ├─ infer.py
-│   └─ train.py
-│
-├─ assets/
-│   ├─ sample_images/
-│   └─ sample_videos/
-│
-├─ docs/
-│   ├─ CHECKLIST.md
-│   └─ PRIVACY_ETHICS.md
-│
 └─ README.md
 ```
 
