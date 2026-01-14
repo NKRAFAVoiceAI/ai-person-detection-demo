@@ -17,7 +17,7 @@
 
 คลิกเพื่อเปิด Notebook เวอร์ชันสมบูรณ์สำหรับการสอนนักเรียน:
 
-https://colab.research.google.com/github/NKRAFAVoiceAI/ai-person-detection-demo/blob/main/notebooks/AI_Person_Detection_YOLOv8_Full_Demo_Students_UPDATED.ipynb
+Open Google Colab [https://colab.research.google.com/github/NKRAFAVoiceAI/ai-person-detection-demo/blob/main/notebooks/AI_Person_Detection_YOLOv8_Full_Demo_Students_UPDATED.ipynb]
 
 > แนะนำให้เปิดด้วย **คอมพิวเตอร์** และตั้งค่า  
 > Runtime → Change runtime type → **GPU**
