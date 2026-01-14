@@ -17,7 +17,7 @@
 
 คลิกเพื่อเปิด Notebook เวอร์ชันสมบูรณ์สำหรับการสอนนักเรียน:
 
-[Open in Colab](https://colab.research.google.com/github/NKRAFAVoiceAI/ai-person-detection-demo/blob/main/notebooks/AI_Person_Detection_YOLOv8.ipynb)
+[Open in Colab](https://colab.research.google.com/github/NKRAFAVoiceAI/ai-person-detection-demo/blob/main/notebooks/AI_Person_Detection_YOLOv8_Full_Demo_Students.ipynb)
 
 > แนะนำให้เปิดด้วย **คอมพิวเตอร์** และตั้งค่า  
 > Runtime → Change runtime type → **GPU**
@@ -36,13 +36,63 @@
 
 ---
 
+## 🗂 การเตรียม Dataset สำหรับ Fine-tune (YOLO Format)
+
+Dataset คือชุดข้อมูลภาพพร้อมไฟล์ Label ที่บอกตำแหน่งวัตถุในภาพ  
+YOLO ใช้โครงสร้างดังนี้:
+
+```
+dataset/
+ ├─ images/
+ │   ├─ train/
+ │   └─ val/
+ ├─ labels/
+ │   ├─ train/
+ │   └─ val/
+ └─ data.yaml
+```
+
+### รูปแบบไฟล์ Label (.txt)
+```
+class_id x_center y_center width height
+```
+
+ตัวอย่าง (ตรวจจับคน):
+```
+0 0.52 0.48 0.30 0.60
+```
+
+### ขั้นตอนเตรียม Dataset
+1) เก็บภาพ  
+2) ทำ Label (เช่น Roboflow, LabelImg)  
+3) จัดโครงสร้าง YOLO  
+4) บีบอัดเป็น .zip  
+5) อัปโหลดเข้า Colab  
+6) ใช้ `model.train()`  
+
+รายละเอียดเชิงปฏิบัติอยู่ใน Google Colab Notebook
+
+---
+
 ## 📁 โครงสร้างโปรเจกต์
 
 ```
 ai-person-detection-demo/
 │
 ├─ notebooks/
-│   └─ AI_Person_Detection_YOLOv8.ipynb
+│   └─ AI_Person_Detection_YOLOv8_Full_Demo_Students.ipynb
+│
+├─ src/
+│   ├─ infer.py
+│   └─ train.py
+│
+├─ assets/
+│   ├─ sample_images/
+│   └─ sample_videos/
+│
+├─ docs/
+│   ├─ CHECKLIST.md
+│   └─ PRIVACY_ETHICS.md
 │
 └─ README.md
 ```
@@ -51,11 +101,11 @@ ai-person-detection-demo/
 
 ## 🧠 เทคโนโลยีที่ใช้
 
-- **YOLOv8 (Ultralytics)**
-- **Google Colab (Tesla T4 GPU)**
-- **Python**
-- **OpenCV / FFmpeg**
-- **COCO8 Public Dataset**
+- YOLOv8 (Ultralytics)
+- Google Colab (Tesla T4 GPU)
+- Python
+- OpenCV / FFmpeg
+- COCO8 Public Dataset
 
 ---
 
@@ -66,11 +116,6 @@ ai-person-detection-demo/
 - วิชาคอมพิวเตอร์ / AI / STEM  
 - กิจกรรม Open House / ค่าย AI  
 - อบรมครู / นักเรียน  
-- การสาธิตพื้นฐาน Machine Learning  
-
-ระยะเวลาแนะนำ:
-- เดโมสั้น: 30 นาที  
-- สอนเต็มรูปแบบ: 1–2 ชั่วโมง  
 
 ---
 
@@ -79,19 +124,16 @@ ai-person-detection-demo/
 - ไม่ใช้ภาพที่ละเมิดสิทธิส่วนบุคคล  
 - แนะนำให้เบลอหน้า  
 - ใช้เพื่อการศึกษาเท่านั้น  
-- อธิบายให้นักเรียนเข้าใจเรื่อง **AI Ethics**  
 
 ---
 
 ## 📌 หมายเหตุสำคัญ
 
-- ไฟล์วิดีโอ Output จะถูกแปลงเป็น **MP4**  
-- แสดงผลในหน้า Colab ได้ทันที  
-- ไม่มีการดาวน์โหลดไฟล์โดยอัตโนมัติ  
+- วิดีโอ Output แสดงเป็น MP4 ใน Colab  
+- ไม่มีการดาวน์โหลดอัตโนมัติ  
 
 ---
 
 ## 📬 ผู้พัฒนา
-ดร.พีรณัฐ  คำศรีสุข และ เรืออากาศเอก อานนท์  บางเสน
-จัดทำเพื่อการเรียนการสอนด้าน **Artificial Intelligence & Computer Vision** 
-สำหรับนักเรียนระดับมัธยมศึกษา
+
+จัดทำเพื่อการเรียนการสอนด้าน AI & Computer Vision
