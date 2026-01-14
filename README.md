@@ -41,6 +41,7 @@
 Dataset คือชุดข้อมูลภาพพร้อมไฟล์ Label ที่บอกตำแหน่งวัตถุในภาพ  
 YOLO ใช้โครงสร้างดังนี้:
 
+```
 dataset/
  ├─ images/
  │   ├─ train/
@@ -49,6 +50,7 @@ dataset/
  │   ├─ train/
  │   └─ val/
  └─ data.yaml
+```
 
 รูปแบบไฟล์ Label (.txt):
 
@@ -116,24 +118,14 @@ model.names
 
 ## 📁 โครงสร้างโปรเจกต์
 
+```
 ai-person-detection-demo/
 │
 ├─ notebooks/
-│   └─ AI_Person_Detection_YOLOv8_Full_Demo_Students_UPDATED.ipynb
-│
-├─ src/
-│   ├─ infer.py
-│   └─ train.py
-│
-├─ assets/
-│   ├─ sample_images/
-│   └─ sample_videos/
-│
-├─ docs/
-│   ├─ CHECKLIST.md
-│   └─ PRIVACY_ETHICS.md
+│   └─ AI_Person_Detection_YOLOv8_Full_Demo_Students.ipynb
 │
 └─ README.md
+```
 
 ---
 
